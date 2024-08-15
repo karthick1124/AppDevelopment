@@ -1,0 +1,196 @@
+.profile-dashboard {
+  padding: 20px;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec); /* Softer gradient */
+  min-height: 100vh;
+  margin-top: 60px;
+  font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+.profile-card, .info-card {
+  padding: 20px;
+  border-radius: 20px; /* More rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)); /* Lighter gradient */
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd; /* Light border for a clean look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Smooth transitions */
+}
+
+.profile-card:hover, .info-card:hover {
+  transform: translateY(-8px); /* More pronounced lift effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)); /* Subtle background change */
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 160px; /* Slightly larger profile image */
+  height: 160px;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Deeper shadow */
+  border: 6px solid #fff; /* Thicker white border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.1); /* More pronounced zoom effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+}
+
+.profile-name {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 2.8rem; /* Larger font size */
+  font-weight: 700; /* Bolder text */
+  color: #222; /* Darker text color for better contrast */
+}
+
+.profile-detail, .section-title {
+  margin-bottom: 15px;
+  font-size: 1.3rem; /* Larger text for better readability */
+  color: #444; /* Darker text for better readability */
+}
+
+.experience-card, .knowledge-card {
+  margin-bottom: 20px;
+  font-size: 1.2rem; /* Larger font for readability */
+}
+
+.knowledge-topic {
+  font-weight: bold;
+  color: #1976d2; /* Highlighted knowledge topic */
+}
+
+.post-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px; /* Rounded corners for post cards */
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.post-content {
+  margin-bottom: 15px;
+  font-size: 1.1rem; /* Slightly larger text for posts */
+}
+
+.MuiButton-root {
+  border-radius: 25px; /* More rounded corners */
+  text-transform: none; /* Preserve original text casing */
+  font-weight: 600; /* Bolder text */
+  padding: 12px 24px; /* Larger button area */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.MuiButton-primary {
+  background-color: #1976d2;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.MuiButton-primary:hover {
+  background-color: #155a8a; /* Darker blue on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.MuiButton-secondary {
+  background-color: #f44336;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.MuiButton-secondary:hover {
+  background-color: #c62828; /* Darker red on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.MuiIconButton-root {
+  border-radius: 50%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.MuiIconButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Subtle hover background */
+  color: #1976d2; /* Change icon color on hover */
+}
+
+.dialog-title {
+  font-size: 1.8rem; /* Larger title size */
+  color: #333; /* Darker title color */
+  margin-bottom: 10px; /* Space below title */
+}
+
+.dialog-content {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95); /* Slightly lighter dialog background */
+  border-radius: 15px;
+  background-image: url('https://wallpapers.com/images/high/business-card-background-1920-x-1080-5ea2y8cj8ju4tyvm.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.dialog-actions {
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the end */
+}
+
+.dialog-actions .MuiButton-root {
+  margin: 0 5px;
+}
+
+.dialog-input {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.dialog-input label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555; /* Darker label color */
+}
+
+.dialog-input textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1rem;
+  resize: none;
+  transition: border-color 0.3s ease; /* Smooth border color change */
+}
+
+.dialog-input textarea:focus {
+  border-color: #1976d2; /* Highlight border on focus */
+}
+
+.dialog-input textarea::-webkit-scrollbar {
+  width: 12px;
+}
+
+.dialog-input textarea::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.dialog-input textarea::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.profile-card, .info-card {
+  animation: fadeIn 0.5s ease-in-out;
+}

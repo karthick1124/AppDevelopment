@@ -1,0 +1,123 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffcc70, #de6161);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.banner-section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 80vw;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banner-section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.banner-left {
+  flex-direction: row-reverse;
+  align-self: flex-end;
+}
+
+.banner-right {
+  flex-direction: row;
+}
+
+.banner-content {
+  margin-left: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.7s forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.b-img {
+  width: 45%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.banner-section:hover .b-img {
+  transform: scale(1.05);
+}
+
+.banner-content h2 {
+  color: #333;
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.banner-content p {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.banner-features {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.banner-features li {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 20px;
+}
+
+.banner-features li::before {
+  content: '✔️';
+  position: absolute;
+  left: 0;
+  color: #de6161;
+  font-size: 1.2em;
+  transform: translateY(-2px);
+}
+
+.banner-button {
+  background-color: #de6161;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.banner-button:hover {
+  background-color: #c13b3b;
+  transform: scale(1.1);
+}
+
+.banner-button:active {
+  background-color: #a12929;
+  transform: scale(1);
+}
